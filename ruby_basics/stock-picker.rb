@@ -5,7 +5,7 @@ def stock_picker(numbers)
     end
     while numbers.first == numbers.max
         numbers.shift
-    end
+    end 
 
     buy_and_sell = []    
     buy_and_sell.push numbers.min
