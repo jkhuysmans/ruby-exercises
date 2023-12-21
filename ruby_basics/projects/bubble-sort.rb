@@ -1,6 +1,6 @@
 def bubble_sort(array)
     
-    p "Original array: #{array}"
+    p = "Original array: #{array}"
     n = array.length
     loop do
         swapped = false
