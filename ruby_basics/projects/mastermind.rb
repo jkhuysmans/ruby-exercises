@@ -29,8 +29,22 @@ def player_guesses(player_input, available_colors)
 
     end
 
-    puts "You picked #{player_input.join(", ")}"
+    puts "You picked #{player_input.join(", ")}."
 end
 
-player_guesses(player_input, available_colors)
+def is_matching(player_input, computer_colors)
+    return true if player_input == computer_colors
+end
+
+12.times do 
+    player_guesses(player_input, available_colors)
+
+    if player_input == computer_colors
+        puts "You won!"
+        break
+    else
+        player_input = []
+    end
+
+end
     
