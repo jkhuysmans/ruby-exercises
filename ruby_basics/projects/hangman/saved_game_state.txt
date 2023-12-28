@@ -1,0 +1,1 @@
+{:word_to_guessI"compound:encoding"ISO-8859-1:correct_guesses[I"c;@I"_:ETI"_;TI"_;TI"_;TI"u;@I"_;TI"d;@:roundsi
