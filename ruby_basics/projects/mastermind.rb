@@ -139,7 +139,8 @@ class Mastermind
       puts "Welcome to Mastermind!"
       intro
     end
-  end
+  
+end
   
   game = Mastermind.new
   game.play_game

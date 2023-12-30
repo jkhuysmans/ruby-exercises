@@ -81,14 +81,14 @@ def player_guess
 
     puts "\nRound #{$rounds}/11"
     puts "Guess: #{$correct_guesses.join(" ")}"
-    puts 'Please enter either a single letter, or a full word. Enter "save" to save the game, or "quit" to go back to menu.'
+    puts 'Please enter either a single letter, or a full word. Enter "save" to save the game, or "load" to load your last save'
 
     until ($player_guess = gets.chomp.downcase).match?(/\A[a-z]+\z/)
         puts "Invalid input: Please enter only alphabet characters."
     end
 
     save if $player_guess == "save"
-    intro if $player_guess == "quit"
+    load if $player_guess == "load"
 
     if $player_guess.length == 1
         letter_guess
