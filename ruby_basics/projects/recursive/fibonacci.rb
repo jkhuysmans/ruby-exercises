@@ -39,3 +39,27 @@ p fibs_rec(1)
 p fibs_rec(7)
 p fibs_rec(8)
 p fibs_rec(9)
+
+def merge_sort(arr)
+    return arr if arr.length <= 1
+
+    middle = arr.length / 2
+    left = merge_sort(arr[0...middle])
+    right = merge_sort(arr[middle..])
+
+    result = []
+    until left.empty? || right.empty?
+        if left[0] <= right[0]
+            result << left.shift
+        else
+            result << right.shift
+        end
+    end
+
+    result.concat(left).concat(right)
+end
+
+
+puts "\nMerge sort recursive method"
+p merge_sort([3, 2, 1, 13, 8, 5, 0, 1])
+p merge_sort([105, 79, 100, 110])
