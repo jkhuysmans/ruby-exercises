@@ -101,14 +101,14 @@ class LinkedList
     end
         
     def to_s
-        list_array = Array.new(0)
+        list_arr = arr.new(0)
         current = @head
         while current
-            list_array << current.value
+            list_arr << current.value
             current = current.next_node
         end
-        list_array << "nil"
-        puts list_array.join(" -> ")
+        list_arr << "nil"
+        puts list_arr.join(" -> ")
 
     end
 end
